@@ -1,7 +1,7 @@
 # Text Generation Using LSTMs
 
 LSTM networks can be trained on a corpus of text to build a language model.This allows us to predict the next
-word in a sequence, given the words precede it. This is a Keras implementation of a character level LSTM 
+word in a sequence, given the words that precede it. This is a Keras implementation of a character level LSTM 
 language model. 
 
 The corpus of text on which the LSTM is trained is a string. A vocabulary of the characters occuring in the string
