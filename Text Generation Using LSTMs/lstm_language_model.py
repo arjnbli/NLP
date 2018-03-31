@@ -1,4 +1,4 @@
-import numpy
+import numpy as np
 from keras.layers import Dense
 from keras.models import Model
 from keras.layers import LSTM
@@ -91,7 +91,7 @@ def training_data(raw_data,char_dict,seq_length,total_characters,vocabulary_size
         x.append([char_dict[char] for char in input_seq])
         y.append(char_dict[out_seq])
     training_patterns=len(x)
-    X = numpy.reshape(x, (training_patterns, seq_length, 1))
+    X = np.reshape(x, (training_patterns, seq_length, 1))
     X = X / float(vocabulary_size)
     Y = np_utils.to_categorical(y)
     return X,Y,x,y,training_patterns

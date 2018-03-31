@@ -163,28 +163,3 @@ model.compile(loss='categorical_crossentropy', optimizer='adam')
 
 #sequences are generated
 generate_sequence(model,x,n_vocabulary,idx_to_char)
-
-
-    
-    
-
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
