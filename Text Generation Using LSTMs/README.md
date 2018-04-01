@@ -14,7 +14,7 @@ index of the next character in the sequence. It must be noted that the last 100 
 training as there is no character in the sequence after that. The output labels are encoded as one hot vectors.
 
 A many-to-one LSTM network with 128 hidden units is used. The LSTM output is passed to a fully connected layer and
-the categorical cross entroy function is used as the optimization objective. The model is trained for desired number
+the categorical cross entropy function is used as the optimization objective. The model is trained for desired number
 of epochs and the weights are saved after each epoch.
 
 Once the network has been trained, the weights corresponding to the minimum loss are loaded. The text is generated
@@ -24,10 +24,10 @@ continues for desired number of iterations.
 
 There are two files - lstm_language_model.py and lstm_text_gen.py. 
 
-lstm_language_model.py trains the lstm on a corpus of text and saves weights after each epoch. The path corpus of text
-needs to provided.
+lstm_language_model.py trains the lstm on a corpus of text and saves weights after each epoch. The path to the corpus of 
+text needs to provided.
 
 lstm_text_gen.py loads weights and generates the sequence. The path to the location where the weights are stored needs to
-be provided
+be provided.
 
 
